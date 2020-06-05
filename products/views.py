@@ -23,7 +23,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':           #  __________   estas 2 lineas de codigo de aqui se anaden en el video part2
+                sortkey = 'category__name'      #  __________   estas 2 lineas de codigo de aqui se anaden en el video part2
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':

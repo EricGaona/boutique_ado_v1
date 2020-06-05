@@ -70,6 +70,12 @@ body {
 	z-index: -1;
 }
 
+/* ______    este codigo de abajo es para el hover en los botones de categori   _______ */
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
