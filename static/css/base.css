@@ -99,7 +99,12 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+/* .btt-link {
+    cursor: pointer;   ___________   esta la he comentado y he anadido la de abajo, esto es para que haga un pointer en las a xq no tinen href    ________
+} */
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
